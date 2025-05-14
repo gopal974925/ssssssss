@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      label {
+        font-size: 20px;
+        color: blueviolet;
+        font-weight: bold;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+        background: url("podium-7148799_1280.jpg") no-repeat;
+        background-size: cover;
+      }
+
+      form {
+        background: transparent;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+        margin-left: auto;
+      }
+
+      /* label {
+            font-weight: bold;
+            color: #555555;
+            display: block;
+            margin-bottom: 5px;
+        } */
+
+      input,
+      textarea,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      /* input:focus, textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        } */
+
+      button {
+        background-color: #2466ad;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: #606e7c;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/submit-feedback" method="post">
+      <h2>Feedback Form</h2>
+      <label for="first_name">First Name:</label><br />
+      <input
+        type="text"
+        id="first_name"
+        name="first_name"
+        required
+      /><br /><br />
+
+      <label for="last_name">Last Name:</label><br />
+      <input type="text" id="last_name" name="last_name" required /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="mobile_no">Mobile NO:</label><br />
+      <input
+        type="mobile_no"
+        id="mobile_no"
+        name="mobile_no"
+        required
+      /><br /><br />
+
+      <label for="feedback">Feedback:</label><br />
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
